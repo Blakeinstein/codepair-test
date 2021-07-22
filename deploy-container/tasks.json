@@ -5,8 +5,8 @@
   "tasks": [
     {
       "label": "npm install",
-      "type": "npm",
-      "script": "install",
+      "type": "shell",
+      "command": "npm install",
       "auto": true
     }
   ]
