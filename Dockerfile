@@ -5,6 +5,7 @@ USER coder
 
 # Apply VS Code settings
 COPY deploy-container/settings.json .local/share/code-server/User/settings.json
+COPY deploy-container/tasks.json .local/share/code-server/User/tasks.json
 COPY deploy-container/config.yaml /home/coder/.config/code-server/config.yaml
 
 # Use bash shell
@@ -25,11 +26,11 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # Install a VS Code extension:
 # Note: we use a different marketplace than VS Code. See https://github.com/cdr/code-server/blob/main/docs/FAQ.md#differences-compared-to-vs-code
-RUN code-server --install-extension auchenberg.vscode-browser-preview
+# RUN code-server --install-extension auchenberg.vscode-browser-preview
 
 # Install apt packages:
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_14.x | sudo bash -
-RUN sudo apt-get install -y nodejs chromium
+RUN sudo apt-get install -y nodejs
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
