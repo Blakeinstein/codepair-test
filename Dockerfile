@@ -29,7 +29,7 @@ RUN code-server --install-extension auchenberg.vscode-browser-preview
 # Install apt packages:
 # RUN sudo apt-get install -y ubuntu-make
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_14.x | sudo bash -
-RUN sudo apt-get install -y nodejs npm
+RUN sudo apt-get install -y nodejs
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
