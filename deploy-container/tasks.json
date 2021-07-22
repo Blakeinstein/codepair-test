@@ -4,13 +4,13 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "npm install",
+      "label": "npmi",
       "type": "shell",
       "command": "npm install",
       "auto": true
     },
     {
-      "label": "npm start 2",
+      "label": "npms",
       "type": "npm",
       "script": "setup",
       "auto": true
