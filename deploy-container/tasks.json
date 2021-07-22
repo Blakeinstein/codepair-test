@@ -6,9 +6,7 @@
     {
       "type": "npm",
       "script": "install",
-      "runOptions": {
-        "runOn": "folderOpen"
-      }
+      "auto": true
     }
   ]
 }
