@@ -5,7 +5,7 @@ USER coder
 
 # Apply VS Code settings
 COPY deploy-container/settings.json .local/share/code-server/User/settings.json
-COPY deploy-container/tasks.json .local/share/code-server/User/tasks.json
+# COPY deploy-container/tasks.json .local/share/code-server/User/tasks.json
 COPY deploy-container/config.yaml /home/coder/.config/code-server/config.yaml
 
 # Use bash shell
