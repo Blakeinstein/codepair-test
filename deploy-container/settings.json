@@ -1,5 +1,11 @@
 {
   "workbench.colorTheme": "Default Dark+",
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.visible": false,
+  "workbench.tips.enabled": false,
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+  "telemetry.enableTelemetry": false,
   "git.enabled": false,
   "window.menuBarVisibility": "hidden",
   "zenMode.fullScreen": false
